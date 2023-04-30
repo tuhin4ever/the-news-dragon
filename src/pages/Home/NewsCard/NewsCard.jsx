@@ -35,7 +35,7 @@ const NewsCard = ({ news }) => {
           ) : (
             <>
               {details.slice(0, 250)}...
-              <Link to={`/news/${_id}`}>Read More</Link>
+              <Link to={`/news/${_id}`} className="text-decoration-none text-warning fw-bold">Read More</Link>
             </>
           )}
         </Card.Text>
@@ -47,7 +47,7 @@ const NewsCard = ({ news }) => {
             placeholderSymbol={<FaStar className="text-warning"></FaStar>}
             fullSymbol={<FaStar></FaStar>}>
           </Rating>
-          <span>{rating?.number}</span>
+          <span className="ms-2">{rating?.number}</span>
         </div>
         <div>
           <FaEye></FaEye> {total_view}
