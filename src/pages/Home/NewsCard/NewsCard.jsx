@@ -13,7 +13,7 @@ import Rating from "react-rating";
 const NewsCard = ({ news }) => {
   const { _id, title, details, image_url, author, total_view, rating } = news;
   return (
-    <Card className="mb-4">
+    <Card className="mt-4">
       <Card.Header className="d-flex align-items-center">
         <Image style={{ height: "40px" }} src={author?.img} roundedCircle />
         <div className="ps-2 flex-grow-1">
